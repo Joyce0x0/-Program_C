@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main()
+{
+  int j;
+  int i;
+  for(int o=1;o<=3;o++){
+  for(j=1;j<=9;j++)
+  {
+    for(i=o;i<=9;i=i+3)
+    {
+        printf("%d*%d=%2d\t",i,j,i*j);
+    }
+    
+        printf("\n");
+  }
+     printf("\n");
+  }
+}
