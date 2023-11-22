@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main() {   
+    int number;
+    float a ;
+    char i;
+   
+    
+    // reads and stores input
+    scanf("%d %f %c", &number, &a, &i);
+    
+    // displays output
+    printf("%d\n%f\n%c\n", number, a, i);
+    
+    return 0;
+}
