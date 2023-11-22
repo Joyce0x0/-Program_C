@@ -2,13 +2,13 @@
 int main()
 {
     char A;
-    printf("输入一个字符: ");
+    printf("輸入一個字符: ");
  
-    // 读取用户输入
+    // 輸入
     scanf("%c", &A);  
     
-    // %d 显示整数
-    // %c 显示对应字符
-    printf("%c 的 ASCII 为 %d", A, A);
+    // %d 顯示整数
+    // %c 顯示對應字符
+    printf("%c 的 ASCII 為 %d", A, A);
     return 0;
 }
