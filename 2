@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main(void) {
+    const int max = 23;          // 最寬一列的星號數（奇數）
+
+    putchar('\n');               // 先空一行
+
+    // 上半部（含中間）
+    for (int i = 1; i <= max; i += 2) {
+        int spaces = max - i;                  // 置中：左側空白
+        for (int s = 0; s < spaces; ++s) putchar(' ');
+        for (int k = 0; k < i; ++k) {          // 星號之間有空白
+            putchar('*');
+            if (k < i - 1) putchar(' ');
+        }
+        putchar('\n');
+    }
+    // 下半部
+    for (int i = max - 2; i >= 1; i -= 2) {
+        int spaces = max - i;
+        for (int s = 0; s < spaces; ++s) putchar(' ');
+        for (int k = 0; k < i; ++k) {
+            putchar('*');
+            if (k < i - 1) putchar(' ');
+        }
+        putchar('\n');
+    }
+    return 0;
+}
